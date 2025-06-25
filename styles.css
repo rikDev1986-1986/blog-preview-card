@@ -18,12 +18,13 @@ body {
   height: 100vh;
   background-color: var(--background-color);
   font-family: 'Figtree', sans-serif;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 1rem;
   background-color: var(--background-card);
   width: 315px;
@@ -39,8 +40,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.card .category {
-  display: inline-block;
+.category {
   background-color: var(--background-color);
   text-align: center;
   font-weight: 900;
@@ -56,9 +56,11 @@ body {
 }
 
 .card .title {
-  font-size: 20; 
+  font-size: 20px;
   font-weight: 900;
   color: rgb(17, 17, 17);
+  width: auto;
+
 
 }
 
@@ -82,4 +84,11 @@ footer img {
 
 .author {
   font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 384px;
+    
+  }
 }
