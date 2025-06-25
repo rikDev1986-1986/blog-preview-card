@@ -60,8 +60,11 @@ body {
   font-weight: 900;
   color: rgb(17, 17, 17);
   width: auto;
+}
 
-
+.card .title:hover {
+  color: var(--background-color);
+  cursor: pointer;
 }
 
 footer {
